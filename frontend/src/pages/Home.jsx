@@ -11,9 +11,9 @@ function Home() {
   return (
     <div>
       <Hero />
-      <BannerSlider />
-      <About />
       <LogoStrip />
+      <About />
+      <BannerSlider />
       <Services />
       <VideoSection />
       <Testimonials />

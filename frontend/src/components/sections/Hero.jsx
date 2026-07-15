@@ -116,7 +116,7 @@ function Hero() {
         </motion.a>
       </div> */}
       </section>
-      <div className="w-full bg-[#ebebeb] px-5 py-3 sm:px-8 lg:px-12">
+      {/* <div className="w-full bg-[#ebebeb] px-5 py-3 sm:px-8 lg:px-12">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-between">
           {trustPoints.map(({ icon: Icon, label }) => (
             <div
@@ -131,7 +131,7 @@ function Hero() {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
       
   </>
   );

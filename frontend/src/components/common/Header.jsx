@@ -371,7 +371,7 @@ function Header() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -12 }}
             transition={{ duration: 0.2 }}
-            className="hidden lg:block absolute left-0 right-0 top-[100px]"
+            className="hidden lg:block absolute left-0 right-0 top-[80px]"
           >
             <div className="max-w-6xl mx-auto px-5 sm:px-8 lg:px-12">
               <div className="rounded-[28px] border border-black/10 bg-white shadow-[0_24px_80px_rgba(15,23,42,0.12)] overflow-hidden">

@@ -1,20 +1,19 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
-import bannerOne from '../../assets/image.png'
-import bannerTwo from '../../assets/image1.png'
-import bannerThree from '../../assets/image2.png'
-import bannerFour from '../../assets/crm.png'
+import bannerOne from '../../assets/banners/b1.png'
+import bannerTwo from '../../assets/banners/b2.jpg'
+import bannerThree from '../../assets/banners/b3.jpg'
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: bannerOne,
     eyebrow: 'Business Software',
     title: 'Smart tools for day-to-day operations.',
     description: 'Manage workflows, reporting, and business visibility with dependable software support.',
   },
   {
-    image: "https://plus.unsplash.com/premium_photo-1674489620667-eaf4a0094996?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fHF1b3Rlc3xlbnwwfHwwfHx8MA%3D%3D",
+    image: bannerTwo,
     eyebrow: 'ERP Enablement',
     title: 'Built for teams that need clearer control.',
     description: 'Simplify coordination across departments with software that helps teams move faster together.',
@@ -25,12 +24,12 @@ const slides = [
     title: 'Reduce manual work with connected processes.',
     description: 'Create smoother business routines with automation, add-ons, and practical integrations.',
   },
-  {
-    image: bannerFour,
-    eyebrow: 'CAMET Support',
-    title: 'Technology guidance with local, responsive service.',
-    description: 'Get implementation, training, and support designed around real business needs.',
-  },
+  // {
+  //   image: "https://images.unsplash.com/photo-1568641134054-508e68306dbd?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  //   eyebrow: 'CAMET Support',
+  //   title: 'Technology guidance with local, responsive service.',
+  //   description: 'Get implementation, training, and support designed around real business needs.',
+  // },
 ]
 
 const headingFont = { fontFamily: 'var(--font-heading)' }
@@ -41,7 +40,7 @@ function BannerSlider() {
   useEffect(() => {
     const intervalId = window.setInterval(() => {
       setActiveIndex((current) => (current + 1) % slides.length)
-    }, 4500)
+    }, 5000)   // Change the interval time (in milliseconds) as needed
 
     return () => window.clearInterval(intervalId)
   }, [])
