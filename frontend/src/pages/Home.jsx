@@ -13,7 +13,7 @@ function Home() {
       <Hero />
       <LogoStrip />
       <About />
-      <BannerSlider />
+      {/* <BannerSlider /> */}
       <Services />
       <VideoSection />
       <Testimonials />

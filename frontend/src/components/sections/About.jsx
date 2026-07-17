@@ -59,9 +59,9 @@ const About = () => {
           </div>
 
           <div className="mt-8 font-['Jost',sans-serif] text-[#17191d]">
-            <p className="text-[1.18rem] font-[700] uppercase tracking-[0.01em]">Iflu Rahman</p>
+            <p className="text-[1.18rem] font-[700] uppercase tracking-[0.01em]">Shine Mathew</p>
             <p className="text-[0.92rem] leading-[1.35] text-[#33373d]">Founder & chairman</p>
-            <p className="text-[0.92rem] leading-[1.35] text-[#33373d]">Crietor Group</p>
+            <p className="text-[0.92rem] leading-[1.35] text-[#33373d]">Camet IT Solutions</p>
           </div>
         </div>
 
